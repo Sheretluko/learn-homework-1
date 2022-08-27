@@ -11,11 +11,17 @@
 """
 
 def hello_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
-  test git branch
+  """
+  Замените pass на ваш код
+  """
+  try:
+    answer = input('Как дела? ')
+    print()
+    while answer.lower() != "хорошо":
+      answer = input('Как дела? ')
+      print()
+  except KeyboardInterrupt:
+    print('Пока')
     
 if __name__ == "__main__":
     hello_user()
